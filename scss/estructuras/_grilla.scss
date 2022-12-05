@@ -1,0 +1,19 @@
+.grilla {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header nav nav"
+      "seccion1 seccion1 seccion1 seccion1"
+      "seccion2 seccion2 seccion2 seccion2"
+      "footer footer footer footer";
+  }
+  
+  .header { grid-area: header; }
+  
+  .nav { grid-area: nav; }
+  
+  .seccion1 { grid-area: seccion1; }
+  
+  .seccion2 { grid-area: seccion2; }
+  
+  .footer { grid-area: footer; }
+  

@@ -1,0 +1,35 @@
+#gamer{
+    .seccion1{
+        padding: 2rem;
+        @include color-main(#d8dbe2);
+        h2{
+            @extend %titulos;
+        }
+    }
+    .seccion2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 2rem;
+        h2{
+            @extend %titulos;
+        }
+        @include color-main(#d8dbe2);
+        .imagen2 {
+            img {
+                @extend %imagenesIndex;
+            }
+        }
+    }
+    @media (max-width:520px){
+        .seccion2{
+            img{
+                width: 450px;
+                height: 350px;
+    
+            }
+        }
+    }
+}
+

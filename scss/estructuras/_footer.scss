@@ -1,0 +1,10 @@
+.footer {
+    font-size: 40px;
+    
+    @include color-header(#373f51);
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+}

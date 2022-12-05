@@ -1,0 +1,7 @@
+@mixin color-main($colorFondo){
+    background-color: $colorFondo;
+}
+
+@mixin color-header($colorHeader){
+    background-color: $colorHeader;
+}

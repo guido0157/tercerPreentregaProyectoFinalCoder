@@ -1,0 +1,57 @@
+#index {
+    .seccion1 {
+        display: flex;
+        padding: 5rem;
+        @include color-main(#d8dbe2);
+
+        img {
+            @extend %imagenesIndex;
+        }
+
+        h2 {
+            @extend %titulos;
+        }
+    }
+
+    .seccion2 {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        align-items: center;
+        @include color-main(#d8dbe2);
+
+        h2 {
+            @extend %titulos;
+            padding-bottom: 5rem;
+        }
+    
+
+        .card {
+            height: 60%;
+            width: 30%;
+            p {
+                text-align: center
+
+            }
+
+            h3 {
+                @extend %titulos;
+            }
+        }
+
+        .imagen2 {
+            img {
+                @extend %imagenesIndex;
+            }
+        }
+        @media (max-width: 520px){
+            .card{
+                width: 80%;
+                height: 100%;
+                justify-content: center;
+            }
+        }
+
+    }
+
+}

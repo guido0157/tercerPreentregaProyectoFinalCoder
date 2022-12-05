@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: flex-end;
+    @include color-header(#373f51);
+    color: #95F9E3;
+    h1{
+       @extend %titulos
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
